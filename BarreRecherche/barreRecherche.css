@@ -1,0 +1,94 @@
+
+/* SOURCE : https://wpcours.com/wp-tutoriels/4-barres-de-recherche-personnalisees-pour-votre-site/ */
+
+/* ---------DEBUT------------ */
+
+#barre_search {
+	background: url('../BarreRecherche/search-dark.png') no-repeat 10px 6px #fff;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #377abd;
+	font: bold 12px Arial,Helvetica,Sans-serif;
+	color: #bebebe;
+	width: 70%;
+	padding: 8px 15px 8px 30px;
+}
+
+#submit_search {
+	background: #377abd;
+	border-width: 0px;
+	padding: 9px 0px;
+	width: 20%;
+	cursor: pointer;
+	font: bold 12px Arial, Helvetica;
+	color: #fff;
+	text-shadow: 0 1px 0 #555;
+}
+
+#submit_search:hover {
+	background: #31669B;
+}
+
+#submit_search:active {
+	background: #29527C;
+	outline: none;
+}
+
+/* ---------FIN-------- */
+
+#recherche {
+	text-align:center;
+}
+
+.left-arrow {
+	position:absolute;
+	top:0;
+	left:0;
+	width:80px;
+	height:80px;
+	background:url('left-arrow.png') no-repeat top left;
+	background-size:80px;
+}
+
+.main {
+	width:50%;
+	margin:auto;
+	text-align:center;
+}
+
+.bar_container {
+	width:100%;
+	margin:auto;
+	text-align:center;
+	background: rgba(55, 122, 189, 0.2);
+	border-radius: 40px;
+	padding: 15px;
+}
+
+.search_result {
+	 color:black;
+}
+
+
+.search_NoResult {
+	display:block;
+	width:50%;
+	margin:auto;
+}
+
+.result {
+	display:block;
+	margin:auto;	
+	width:50%;
+	
+}
+
+.result h1{
+	text-align:center;
+}
+
+.pseudos {
+	display:block;
+	margin:auto;
+	width:23%;
+}

@@ -1,0 +1,52 @@
+
+#container {
+	width:50%;
+	margin:auto;
+	box-shadow:4px 4px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+#titre {
+	text-align:center;
+}
+
+#alone {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.msgBox {
+	height:70px;
+	margin:3px;
+	margin-top:10px;
+	background:white;
+	box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	transition:0.1s; /* Toute modification peu importe l'attribut prendra 0.1s */
+	cursor:pointer; /* Fait pointer le cursor */
+}
+
+.msgBox:hover {
+	transform:scale(1.02); /* Augmente legerement la taille de la box */
+}
+
+.msgBox a {
+	display:block;
+	width:100%;
+	height:70px;
+	position:relative;
+	text-decoration:none;
+	color:black;
+}
+
+.pseudo {
+	height:30%;
+}
+
+.pseudo p {
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.msg {
+	height:70%;
+}

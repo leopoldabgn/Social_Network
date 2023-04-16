@@ -1,0 +1,12 @@
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('open_sans.woff2') format('woff2'); /* Police trouvé sur le net */
+}
+
+/* On applique la police sur le body pour toutes les pages du site */
+body { 
+	font-family:'Open Sans', Helvetica, Arial, sans-serif;
+}

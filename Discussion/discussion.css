@@ -1,0 +1,134 @@
+
+#container {
+	width:40%;
+	height:100%;
+	margin:auto;
+	box-shadow:4px 4px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+#banner {
+	background:rgba(0, 0, 0, 0.1);
+	height:80px;
+}
+
+#left-arrow {
+	display:inline-block;
+	float:left;
+	width:80px;
+	height:80px;
+	background:url('left-arrow.png') no-repeat top left;
+	background-size:80px;
+	vertical-align:middle;
+}
+
+#titre {
+	display:inline-block;
+	width: calc(100% - (80px)*2); /* Le bloc est parfaitement centré. Avec 80px à gauche et de même à droite. */
+	text-align:center;
+	vertical-align:middle;
+}
+
+#scroll {
+	display:flex;
+	height:75vh; /* Environ 75% de la largeur du block parent */
+	overflow-y:auto; /* On affiche une barre pour scoller verticalement si besoin */
+	overflow-x:hidden; /* On cache la barre de scoll horizontale */
+	flex-direction:column; /* On place tous les blocs enfant en colonne */
+}
+
+#no-message {
+	text-align:center;
+}
+
+.containerMsg {
+	width:100%;
+	padding:8px;
+}
+
+.senderMsg {
+	display:block;
+	text-align:left;
+	float:right;
+	position:relative;
+	max-width:70%;
+	margin-right:10px;
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:20px;
+	word-break: break-word;
+	background:rgb(0, 132, 255);
+	color:white;
+	transition:background-color 0.3s;
+}
+
+.senderMsg:hover {
+	background:rgb(0, 95, 184);	
+	cursor:pointer;
+}
+
+.recipientMsg {
+	display:block;
+	text-align:left;
+	float:left;
+	max-width:70%;
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:20px;
+	word-break: break-word;
+	background:rgb(228, 230, 235);
+	color:black;
+}
+
+#msg-form {
+	text-align:center;
+}
+
+#message {
+	display:inline-block;
+	width:70%;
+	border-radius:20px; /* coins arrondis */
+	padding-left:10px; /* Important. Sinon les premieres lettres sont "mangés" par le coin supérieur gauche */
+	box-shadow:2px 5px 5px grey; /* ombre grise sous l'element */
+	outline:none; /* Enleve le contour noir lors de la selection de l'element */
+}
+
+#send_button {
+	display:inline-block;
+}
+
+#send_button{
+	width:45px;
+	height:45px;
+	background: url('send-icon.png') no-repeat top left;
+	background-size:45px;
+	transition:background 0.1s; /* Petit effet de transition sur le bouton */
+}
+
+#send_button input {
+	background:none;
+	border:none;
+	outline:none;
+	width:45px;
+	height:45px;
+}
+
+#send_button:hover {
+	background-image:url('send-icon-2.png'); /* On met l'autre image du bouton. Celle qui est bleue */
+}
+
+.trash { /* Par defaut, on cache la poubelle */
+	display:none;
+	position:absolute;
+	top:3px;
+	left:-25px;
+	width:30px;
+	height:100%;
+}
+
+.trash input{
+	width:20px;
+}
+
+.senderMsg:hover p + .trash, .trash:hover { /* On affiche la poubelle, lors d'un hover d'un message qu'on à envoyé */
+	display:inline;
+}

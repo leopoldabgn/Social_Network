@@ -1,0 +1,98 @@
+
+#container {  /* Utilisé dans home.php et profil.php */
+	width:50%;
+	margin:auto;
+	box-shadow:4px 4px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+#titre {
+	text-align:center;
+}
+
+#scrolling-container {
+	width:90%;
+	margin:0 auto;
+	padding-right:10px; /* Une marge de quelques pixels à droite pour que la barre de scoll n'ecrase pas les publications */
+}
+
+.publi-container {
+	display:block;
+	padding:10px;
+	width:100%;
+	margin:0 auto;
+}
+
+.publi-title {
+	border-bottom:2px solid grey;
+}
+
+.publi-title a {
+	font-size:1.3em;
+	text-decoration:none;
+	font-weight:bold;
+	color:#377abd;
+}
+
+.publi-title a:hover {
+	color:#0d59a6;
+}
+
+.publication {
+	padding-top:10px;
+}
+
+.publication img { 
+	max-width:100%; /* L'image ne peut pas depasser la taille du container */
+}
+
+.publi-option-bar {
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.publi-like {
+	display:flex;
+	flex-direction:line; /* on mets les elements en ligne */
+	align-items:center; /* on centre les elements verticalement */
+}
+
+.publi-like p {
+	margin-left:10px;
+	font-size:1.4em;
+	
+}
+
+.publi-desc {
+}
+
+.publi-date {
+	color:#6e6e6e;
+}
+
+.publi-like input {
+	width:45px;
+	height:45px;
+	-webkit-animation: scale-in-center 0.5s;
+	animation: scale-in-center 0.5s;
+}
+
+.trash input{
+	width:40px;
+	height:40px;
+}	
+
+/* source : https://www.youtube.com/watch?v=OhW9H0EB2uI */
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+

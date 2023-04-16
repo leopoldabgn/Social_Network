@@ -1,0 +1,62 @@
+
+article {
+	width:30%;
+	margin:auto;
+}
+
+#titre {
+	text-align:center;
+}
+
+article fieldset {
+	margin-bottom: 15px;
+	padding: 10px;
+	box-shadow: 12px 12px 7px 1px rgba(0, 0, 255, .2);
+}
+
+.login label {
+	font-weight:bold;
+	margin: 6px;
+}
+
+.login em {
+	color:red;
+}
+
+.login .default_input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.login .wrong_input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+#bouton-connexion {
+	display:block;
+	margin:auto;
+	width:40%;
+	height:30px;
+	background-color:#377abd;
+	border: dashed red;
+	color:white;
+	border:none;
+	outline: none; /* Permet de retirer les bordures d'un bouton */
+}
+
+.error {
+	display:inline-block;
+	margin-bottom:12px;
+	color:red;
+}

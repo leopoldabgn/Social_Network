@@ -1,0 +1,70 @@
+
+nav {
+	display:flex;
+	flex-direction:line;
+	align-items:center;
+	justify-content:space-between;
+	height:50px;
+}
+
+#bar {
+	width:50%;
+	display:flex;
+	justify-content:center;
+}
+
+#deco-reco {
+	width:25%;
+}
+
+#deco-reco a {
+	float:right;
+}
+
+/* Effet de soulignement --> https://www.youtube.com/watch?v=LRaFcCERtnQ */
+
+.BoutonNoCurrent {
+	display:inline-block;
+	height: 50px;
+	width: 150px;
+	line-height:44px;
+	margin-right:10px;
+	text-align:center;
+	/* Crée un dégradé de bleu. Permet de faire une ligne en bas et transparent en haut */
+	background: linear-gradient(to top, #377abd 0px, #377abd 5px, transparent 5px) no-repeat;
+	/* On cache l'arrière plan, et donc le soulignement */
+	background-size: 0 100%;
+	/* On met une transition pour que le soulignement se face 0.3s */
+	transition: background-size 0.3s;
+}
+
+.icon {
+	display:inline-block;
+	width:35px;
+	vertical-align:middle; /* On centre l'icone verticalement */
+	margin:auto; /* On centre horizontalement */
+	margin-top:-5px; /* On centre l'image (en enlevant les 5px du soulignement)*/
+}
+
+.BoutonNoCurrent:hover {
+	background-size:100% 100%; /* Remet le fond, et créer un effet de soulignement */
+}
+
+.BoutonNoCurrent:active {
+	height: 44px;
+	width: 150px;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius:5px;
+}
+
+.BoutonCurrent{
+	display:inline-block;
+	line-height:44px;
+	height: 50px;
+	width: 150px;
+	margin-right:10px;
+	text-align:center;
+	border:none;
+	background: linear-gradient(to top, #377abd 0px, #377abd 5px, transparent 5px) no-repeat;
+	background-size: 100% 100%;
+}

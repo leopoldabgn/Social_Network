@@ -1,0 +1,27 @@
+Notre site à pour objectif de permettre aux utilisateurs de communiquer entre eux et de partager leurs passions, leur vie…
+Les utilisateurs du site peuvent poster des publications et s’abonner à d’autres utilisateurs pour voir leurs posts.
+Le site est donc un réseau social permettant d’échanger avec les autres utilisateurs en partageant du contenu. 
+Il est possible de poster des messages, accompagnés, si on le souhaite, d’images.
+Certains utilisateurs peuvent être nommés administrateurs afin de modérer les différents contenues postés sur le site, 
+ils peuvent alors supprimer les publications des autres utilisateurs.
+Il est aussi possible de discuter avec ses amis s’ils ont créés un compte, ou avec les autres utilisateurs du site.
+Un utilisateur peut se servir de la barre de recherche pour trouver un compte précis ou pour découvrir les comptes d’autres utilisateurs.
+
+Choix techniques:
+Nous avons essayé de factoriser le code lorsque c’était utile, par exemple en créant un dossier “include” dans lequel on trouve différents fichiers,
+notamment le fichier de connexion à la base de donnée que l’on inclut dans de nombreux autres fichiers.
+Il y a aussi le fichier affichage qui contient la fonction “afficherEntête” que l’on va utiliser, après avoir inclus le fichier d’affichage,
+de nombreuses fois ce qui permet de ne pas réécrire plusieurs fois du code pour afficher l’entête de toutes les pages du site. 
+Cette fonction permet de ne pas répéter différentes balises html comme celles contenant les styles et title, 
+ainsi que les balises “head”, “DOCTYPE” et l’ouverture de la balise “body”.
+On y trouve aussi les fichiers qui permettent l’affichage de la barre de navigation.
+Nous avons de plus créé les fichiers “fil_publi.php” et “fil_publi.css” qui permettent l’affichage du fil de publication 
+et que l’on utilise donc à la fois dans la page d'accueil et dans la page de profil. 
+Cette factorisation du code nous à permis d’économiser un nombre important de lignes de codes en créant des fichiers 
+et des fonctions que l’on inclut et qu'on utilise dans plusieurs autres fichiers.   
+
+Dfficultés:
+Ce qui a été plutôt difficile, c'est surtout la reflexion avant de faire chaque partie du projet. Comment bien organisé le
+code, la structure du site. Il a fallu prévoir à l'avance les prochaines étapes, pour ne pas faire de duplication de code par exemple ou écrire
+du code inutile. Ensuite, il y a eu egalement de nombreux bugs à régler au fur et à mesure. De plus, c'est un projet qui prenait beaucoup de temps
+donc il fallait savoir s'y consacrer pleinement.
